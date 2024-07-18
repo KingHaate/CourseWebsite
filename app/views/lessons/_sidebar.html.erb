@@ -1,6 +1,6 @@
 <div class="w-full">
   <% course.lessons.order(:position).each do |lesson| %>
-    <% if lesson.paid %>
+    <% if lesson.paid && !paid_for_course %>
       <div class="border p-6 hover:bg-gray-200">
         <div>
           <%= icon('fa-solid', 'lock', class: "mr-2 text-gray-600") %><span class="font-light"><%= lesson.title %></span>

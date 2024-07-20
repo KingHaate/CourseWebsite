@@ -75,6 +75,9 @@ GEM
       minitest (>= 5.1)
       mutex_m
       tzinfo (~> 2.0)
+    acts_as_list (1.2.2)
+      activerecord (>= 6.1)
+      activesupport (>= 6.1)
     addressable (2.8.7)
       public_suffix (>= 2.0.2, < 7.0)
     base64 (0.2.0)
@@ -117,6 +120,8 @@ GEM
     font-awesome-sass (6.5.2)
       sassc (~> 2.0)
     globalid (1.2.1)
+      activesupport (>= 6.1)
+    groupdate (6.4.0)
       activesupport (>= 6.1)
     i18n (1.14.5)
       concurrent-ruby (~> 1.0)
@@ -302,11 +307,13 @@ PLATFORMS
   x86_64-linux-gnu
 
 DEPENDENCIES
+  acts_as_list (~> 1.0)
   bootsnap
   capybara
   debug
   devise (~> 4.9)
   font-awesome-sass (~> 6.5.1)
+  groupdate (~> 6.4)
   image_processing (~> 1.2)
   importmap-rails
   jbuilder

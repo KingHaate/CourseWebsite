@@ -73,3 +73,5 @@ end
 gem "font-awesome-sass", "~> 6.5.1"
 gem "devise", "~> 4.9"
 gem "stripe", "~> 10.3"
+gem "acts_as_list", "~> 1.0"
+gem "groupdate", "~> 6.4"

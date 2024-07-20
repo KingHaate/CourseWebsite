@@ -35,6 +35,12 @@ class Admin::CoursesController < AdminController
     end
   end
 
+  def destroy
+    @admin_course = Course.find(params[:id])
+    @admin_course.destroy
+    redirect_to admin_courses_path, notice: 'Curso foi deletado com sucesso.'
+  end
+
   private
 
   def course_params

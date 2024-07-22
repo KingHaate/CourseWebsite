@@ -8,11 +8,11 @@
         <%= link_to "Courses", admin_courses_path, class: "hover:bg-amaranth-500 hover:text-white-50 rounded py-2 px-4" %>
       </div> 
       <div>
-        <%= link_to "Users", root_path, class: "hover:bg-amaranth-500 hover:text-white-50 rounded py-2 px-4" %>
+        <%= link_to "Users", admin_users_path, class: "hover:bg-amaranth-500 hover:text-white-50 rounded py-2 px-4" %>
       </div> 
     </div>
     <div>
-      <%= link_to root_path do %>
+      <%= link_to admin_path do %>
         <% image_tag "logo.png", class: "h-12" %> 
       <% end %>
     </div>
@@ -29,7 +29,7 @@
 <header data-controller="navbar" class="bg-amaranth-500 sm:hidden w-full py-4 px-5 text-white-50">
   <div class="flex justify-between items-center">
     <div>
-      <%= link_to root_path do %>
+      <%= link_to admin_path do %>
         <%= image_tag "logo.png", class: "h-12" %>
       <% end %>
     </div>
@@ -51,7 +51,7 @@
       <%= link_to "Courses", admin_courses_path, class: "hover:bg-amaranth-700 rounded py-2 px-4" %>
     </div>
     <div class="mt-4">
-      <%= link_to "Users", root_path, class: "hover:bg-amaranth-700 rounded py-2 px-4" %>
+      <%= link_to "Users", admin_users_path, class: "hover:bg-amaranth-700 rounded py-2 px-4" %>
     </div>
 
     <% if user_signed_in? %>

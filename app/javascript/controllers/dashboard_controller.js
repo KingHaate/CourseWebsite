@@ -57,7 +57,7 @@ export default class extends Controller {
       data: {
         labels: labels2,
         datasets: [{
-          label: "Lessons Completed",
+          label: "Sign Ups",
           data: data2,
           borderWidth: 3,
           fill: true,
